@@ -1,14 +1,14 @@
 import './App.css';
 
-import itemListContainer from './components/itemListContainer';
+import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div>
+    <>
       <NavBar />
-      <itemListContainer />
-    </div>
+      <ItemListContainer texto= 'Tienda Samsung' />
+    </>
   );
 }
 

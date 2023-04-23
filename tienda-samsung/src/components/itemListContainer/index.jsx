@@ -1,10 +1,19 @@
+import ItemCount  from "../ItemCount";
 import React from "react";
 import Title from "../Title";
 
-export const itemListContainer = () => {
+export const ItemListContainer = ({texto}) => {
+
+    const onAdd=(cantidad)=> {
+        console.log(`Compaste ${cantidad} unidades`)
+    }
+
     return (
-        <Title />
+        <>
+                <Title greeting ={texto} />
+                <ItemCount initial={1} stock ={5} onAdd= { onAdd} />
+        </>
     );
 }
 
-export default itemListContainer;
+export default ItemListContainer;
