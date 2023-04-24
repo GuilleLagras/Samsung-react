@@ -1,0 +1,8 @@
+.modelo{
+    display: block;
+    width: 30px;
+}
+
+.modelos img{
+    object-fit: cover;
+}
